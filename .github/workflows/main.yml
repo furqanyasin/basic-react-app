@@ -34,10 +34,10 @@ jobs:
         cmd: install   # Yarn/npm install command
     
     - name: creating build
-      run: yarn build
+      run: npm run build
     
     - name: installing surge
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build bootcampfurqanassinment2.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build furqanbasicreactapp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
